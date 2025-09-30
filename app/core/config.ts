@@ -53,10 +53,10 @@ export const config: Config = {
   BACKUP_TOKEN: getEnvVar("BACKUP_TOKEN", "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMxNmJjYjQ4LWZmMmYtNGExNS04NTNkLWYyYTI5YjY3ZmYwZiIsImVtYWlsIjoiR3Vlc3QtMTc1NTg0ODU4ODc4OEBndWVzdC5jb20ifQ.PktllDySS3trlyuFpTeIZf-7hl8Qu1qYF3BxjgIul0BrNux2nX9hVzIjthLXKMWAf9V0qM8Vm_iyDqkjPGsaiQ"),
   
   // Model Configuration
-  PRIMARY_MODEL: getEnvVar("PRIMARY_MODEL", "GLM-4.5"),
-  THINKING_MODEL: getEnvVar("THINKING_MODEL", "GLM-4.5-Thinking"),
-  SEARCH_MODEL: getEnvVar("SEARCH_MODEL", "GLM-4.5-Search"),
-  AIR_MODEL: getEnvVar("AIR_MODEL", "GLM-4.5-Air"),
+  PRIMARY_MODEL: getEnvVar("PRIMARY_MODEL", "GLM-4.6"),
+  THINKING_MODEL: getEnvVar("THINKING_MODEL", "GLM-4.6-Thinking"),
+  SEARCH_MODEL: getEnvVar("SEARCH_MODEL", "GLM-4.6-Search"),
+  AIR_MODEL: getEnvVar("AIR_MODEL", "GLM-4.6-Air"),
   
   // Server Configuration
   LISTEN_PORT: getEnvNumber("LISTEN_PORT", 8080),
