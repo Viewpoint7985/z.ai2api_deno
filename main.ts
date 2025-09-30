@@ -231,7 +231,7 @@ const ANON_TOKEN_ENABLED = true;
  * 环境变量配置
  */
 const UPSTREAM_URL = Deno.env.get("UPSTREAM_URL") || "https://chat.z.ai/api/chat/completions";
-const DEFAULT_KEY = Deno.env.get("DEFAULT_KEY") || "sk-your-key";
+const DEFAULT_KEY = Deno.env.get("DEFAULT_KEY") || "woaizhangxiaojun";
 const ZAI_TOKEN = Deno.env.get("ZAI_TOKEN") || "";
 
 /**
@@ -296,51 +296,6 @@ const SUPPORTED_MODELS: ModelConfig[] = [
     defaultParams: {
       top_p: 0.6,
       temperature: 0.8
-    }
-  },
-  {
-    id: "0727-106B-API",
-    name: "GLM-4.5-Air",
-    upstreamId: "0727-106B-API",
-    capabilities: {
-      vision: false,
-      mcp: true,
-      thinking: true
-    },
-    defaultParams: {
-      top_p: 0.95,
-      temperature: 0.6,
-      max_tokens: 80000
-    }
-  },
-  {
-    id: "main_chat",
-    name: "GLM-4-32B",
-    upstreamId: "main_chat",
-    capabilities: {
-      vision: false,
-      mcp: false,
-      thinking: false
-    },
-    defaultParams: {
-      top_p: 0.95,
-      temperature: 0.6,
-      max_tokens: 4096
-    }
-  },
-  {
-    id: "GLM-4.1V-Thinking-FlashX",
-    name: "GLM-4.1V-9B-Thinking",
-    upstreamId: "GLM-4.1V-Thinking-FlashX",
-    capabilities: {
-      vision: true,
-      mcp: false,
-      thinking: true
-    },
-    defaultParams: {
-      top_p: 0.95,
-      temperature: 0.6,
-      max_tokens: 80000
     }
   }
 ];
